@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gabriel Jovenal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gabriel Jovenal</h1>
+
+    <img id="foto" src="img/foto1.jpg" alt="Minha foto">
+
+    <p>
+        Oi, meu nome é Gabriel Jovenal, tenho 20 anos e sou estudante de Engenharia de Computação.
+        Atualmente faço estágio na empresa KOT Engenharia.
+    </p>
+
+    <p>
+        Sou fascinado por aeronautica, e pretendo no futuro atuar com computação voltada a essa área
+    </p>
+
+    <button onclick="trocarFoto()">Trocar foto</button>
+</body>
+<script>
+    function trocarFoto() {
+        alert("Você achou dois grandes projetos, NZ-01, e o KC390 da Embraer.");
+        const foto = document.getElementById("foto");
+
+        if (foto.src.includes("foto1.jpg")) {
+            foto.src = "img/foto2.jpg";
+        } else {
+            foto.src = "img/foto1.jpg";
+        }
+    }
+</script>
+
+</html>
